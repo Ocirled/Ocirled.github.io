@@ -1,0 +1,277 @@
+*{
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(209, 209, 209);
+}
+
+.about{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.motivasi,
+.teks {
+    animation: about 1.5s 1 forwards;
+}
+
+@keyframes about {
+    0% {
+        transform: translateY(1000px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.image{
+    float: none;
+    margin-top: 50px;
+    animation: image 1.5s 1 forwards;
+}
+
+@keyframes image {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.judul{
+    font-size: 20px;
+    margin: 5px;
+}
+
+.motivasi p{
+    font-family: 'Gochi Hand', sans-serif;
+    font-size: 25px;
+}
+
+.teks p{
+    font-size: 14px;
+}
+
+h1{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.skill{
+    text-align: center;
+    margin: auto;
+    margin-top: 120px;
+    width: 60%;
+}
+
+.penjelasanskill{
+    margin-top: 20px;
+}
+
+.html{
+    margin-top: 41px;
+}
+
+.css{
+    margin-top: 40px;
+    padding: 5px;
+}
+
+.projects{
+    text-align: center;
+    margin-top: 120px;
+}
+
+.card{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card1, .card2{
+    margin-top: 50px;
+}
+
+.card img{
+    width: 300px;
+    margin: auto;
+}
+
+.contact{
+    margin: 200px auto;
+    width: 50%;
+}
+
+footer{
+    background-color: transparent;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.containersosmed{
+    display: inline-block;
+}
+
+.ikon{
+    display: inline-block;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 5px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.082);
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+}
+
+.ikon:hover{
+    width: 200px;
+}
+
+.ikon .ikon1{
+    display: inline-block;
+    text-align: center;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    box-sizing: border-box;
+}
+
+.ikon span a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.ikon span a:hover{
+    color: grey;
+}
+
+
+@media (min-width: 1200px) {
+    .about{
+        width: 60%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    
+    .image{
+        height: 300px;
+        float: left;
+        margin-top: 115px;
+        margin-right: 100px;
+        animation: image 2s 1 forwards;
+    }
+
+    @keyframes image {
+        0% {
+            transform: translateX(-1000px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+    
+    .motivasi p{
+        font-family: 'Gochi Hand', sans-serif;
+        font-size: 60px;
+    }
+    
+    .teks p{
+        font-size: 20px;
+    }
+
+    .motivasi,
+    .teks {
+    animation: about 2s 1 forwards;
+    }
+
+    @keyframes about {
+        0% {
+            transform: translateX(1000px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+
+    .skill{
+        margin-top: 200px;
+        width: 50%;
+        height: 300px;
+        text-align: center;
+    }
+
+    .html{
+        float: left;
+        width: 50%;
+        height: 50%;
+        margin-top: 40px;
+    }
+
+    .imghtml{
+        margin-top: 5px;
+    }
+
+    .css{
+        float: right;
+        width: 50%;
+        height: 50%;
+    }
+
+    .projects{
+        margin: 200px auto;
+        width: 75%;
+    }
+
+    .card{
+        width: 70%;
+        margin-top: 30px;
+        margin: auto;
+        padding: 20px;
+        font-size: 17px;
+    }
+    
+    .card img{
+        width: 200px;
+        margin: auto;
+    }
+
+    .card1, .card2{
+        width: 50%;
+        float: left;
+    }
+
+    .contact{
+        margin-top: 200px auto;
+        padding: 10px;
+    }
+}
+
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
